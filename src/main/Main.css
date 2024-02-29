@@ -1,0 +1,164 @@
+#main {
+    margin: 20px auto;
+    width: 380px;
+    height: 650px;
+    padding: 32px;
+    border-radius: 20px;
+    gap: 40px;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.308);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 316px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.switch-container {
+    width: 100%;
+    height: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    ;
+}
+
+.switch-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.inputBar {
+    width: 100%;
+    height: 46px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #D8D8D8;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.inputBar:active {
+    font-size: 16px;
+}
+
+.inputBar:disabled {
+    border-color: #F5F5F5;
+    color: #F5F5F5;
+    background-color: unset;
+}
+
+.question-container {
+    width: 100%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.question-group {
+    width: 100%;
+}
+
+.question-group .question {
+    color: #000000;
+}
+
+.question {
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    text-align: start;
+    color: #343434;
+}
+
+.des {
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    text-align: start;
+    color: #616161;
+}
+
+.process-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 57px;
+    border-radius: 80px;
+    padding: 16px 24px 16px 24px;
+    color: white;
+    background-color: #6B47ED;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.process-button:disabled{
+    background-color: #D4CCF7;
+    color: #FFFFFF;
+}
+
+.ant-switch,
+.ant-switch:not(.ant-switch-checked):hover {
+    background-color: white;
+    outline: 1px solid #6B47ED;
+}
+
+.checkbox-group,
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #979797;
+}
+
+.checkbox-group .ant-checkbox+span,
+.radio-group .ant-radio+span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #979797;
+}
+
+.checkbox-group .ant-checkbox-wrapper-checked .ant-checkbox+span,
+.checkbox-group .ant-checkbox-disabled.ant-checkbox-checked .ant-checkbox+span,
+.radio-group .ant-radio-wrapper-checked .ant-radio+span,
+.radio-group .ant-radio-disabled.ant-radio-checked .ant-radio+span {
+    color: #000000;
+}
+
+.checkbox-group .ant-checkbox-inner::after,
+.radio-group .ant-radio-inner::after {
+    content: none;
+}
+
+.checkbox-group .ant-checkbox span.ant-checkbox-inner {
+    border-radius: 50%;
+}
+
+.checkbox-group .ant-checkbox-disabled .ant-checkbox-inner,
+.radio-group .ant-radio-disabled .ant-radio-inner {
+    background-color: unset;
+    border-color: #d9d9d9;
+}
+
+.checkbox-group .ant-checkbox-checked.ant-checkbox-disabled .ant-checkbox-inner,
+.radio-group .ant-radio-checked.ant-radio-disabled .ant-radio-inner {
+    background-color: #D8D8D8;
+}
+
+.radio-group .ant-radio-wrapper .ant-radio-checked::after {
+    border: none !important;
+}
